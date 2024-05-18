@@ -76,10 +76,10 @@ class _HomeViewState extends State<HomeView> {
 
 class _ExampleCard extends StatelessWidget {
   const _ExampleCard({
-    Key? key,
+    super.key,
     required this.example,
     this.selected = false,
-  }) : super(key: key);
+  });
 
   final _ExampleData example;
   final bool selected;
